@@ -1,0 +1,204 @@
+body {
+  font-family: Optima;
+  margin-top: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#content {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 50px;
+}
+
+h1 {
+  color: #31356e;
+  font-weight: bold;
+  clear: left;
+}
+
+h3 {
+  color: #333333;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+p {
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-btn {
+  background-color: #31456e;
+  border: 1px solid #31456e;
+  color: #fff;
+  padding: 1%;
+  font-size: 0.9em;
+  margin-top: 40px;
+}
+
+.main-btn:hover {
+  background-color: #cccccc;
+  color: #333333;
+  border: 1px solid #cccccc;
+  padding: 1%;
+  font-size: 0.9em;
+}
+
+.form_input {
+  width: 25%;
+  border: 1px solid #333333;
+  padding: 0.5%;
+}
+
+/* Index */
+
+#main_content {
+  margin-top: 150px;
+}
+
+/* Testimonials */
+
+.testimonials_content {
+  margin-bottom: 120px;
+}
+
+.personas {
+  width: 20%;
+}
+
+#persona1 {
+  float: left;
+}
+
+#persona2 {
+  float: right;
+}
+
+.testimonials_sections:nth-child(1) {
+  margin-bottom: 90px;
+}
+
+.testimonials_sections:nth-child(2) {
+  border-top: 1px solid #cccccc;
+  margin-bottom: 70px;
+}
+
+.testimonials_sections p {
+  margin-top: 70px;
+}
+
+/* My Entries */
+
+table {
+  width: 100%;
+}
+
+table a {
+  color
+}
+
+th {
+  text-align: left;
+  background-color: #31456e;
+  padding: 1%;
+  color: #fff;
+}
+
+td {
+  border: 1px solid #333333;
+  padding: 1%;
+  text-align: left;
+}
+
+.entries-btn {
+  background-color: #333333;
+  border: 1px solid #333333;
+  color: #fff;
+  padding: 2%;
+  font-size: 0.9em;
+  margin-right: 1%;
+}
+
+.entries-btn:hover {
+  background-color: #cccccc;
+  color: #333333;
+  border: 1px solid #cccccc;
+  padding: 2%;
+  font-size: 0.9em;
+}
+
+/* Add Entry */
+
+#form_heading1, #form_heading2 {
+  float: left;
+}
+
+#form_heading1 input {
+  width: 400%;
+  padding: 5%;
+  border: 1px solid #333333;
+}
+
+#form_heading2 {
+  margin-left: 43%;
+}
+
+#form_heading2 input {
+  width: 300%;
+  border: 1px solid #333333;
+  padding: 5%;
+}
+
+#entry_form img {
+  width: 2%;
+  position: absolute;
+  margin-left: 20.4%;
+  margin-top: 21px;
+}
+
+#entry_form h3, #entry_form input {
+  display: block;
+}
+
+#entry_textarea {
+  margin-top: 20px;
+  width: 100%;
+  height: 200px;
+}
+
+/* Contact */
+
+#contact_info {
+  float: left;
+}
+
+#contact_info > p:nth-child(3) {
+  padding-top: 20px;
+  border-top: 2px solid #cccccc;
+}
+
+#contact_form {
+  margin-left: 50%;
+}
+
+#contact_form input {
+  width: 80%;
+  padding: 1%;
+}
+
+#contact_form textarea {
+  width: 100%;
+  height: 130px;
+}
+
+/* Settings */
+
+.settings:nth-child(3) {
+  margin-top: 30px;
+  border-top: 1px solid #cccccc;
+
+}
