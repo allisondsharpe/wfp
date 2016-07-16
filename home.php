@@ -38,20 +38,20 @@ if(!$_SESSION['email']) {
           <li><a href="testimonials.php">Testimonials</a></li>
         </ul>
       </li>
-      <li class="border-right"><a href="entries.php">My Entries</a>
+      <li class="border-right"><a href="entries.php">Entries</a>
         <ul>
-          <li><a href="add_entry.php">Add a New Entry</a></li>
+          <li><a href="add_entry.php">Add New Entry</a></li>
           <li><a href="view_entry.php">View Entries</a></li>
         </ul>
       </li>
-      <li><a href="contact.php">Contact Us</a></li>
+      <li><a href="contact.php">Contact</a></li>
     </ul>
   </nav>
 
   <!-- End of Heading -->
 
     <div id="content">
-      <h1> Welcome to Your Dashboard </h1>
+      <h1> Welcome to Your Dashboard</h1>
       <p>This is the home page for your blog. You may view your entries by clicking the option down below. </p>
 
       <a href="view_entry.php"><button class="main-btn" type="button">View Entries</button></a>

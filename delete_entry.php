@@ -1,5 +1,15 @@
 <?php
 
+session_start();
+
+if(!$_SESSION['email']) {
+  header("location: login.php");
+}
+
+ ?>
+
+<?php
+
 $id = $_GET['id'];
 
 $db = mysqli_connect("45.55.177.160", "root", "") or die("Could not connect to database");
@@ -45,13 +55,13 @@ $row = mysqli_fetch_array($result);
           <li><a href="testimonials.php">Testimonials</a></li>
         </ul>
       </li>
-      <li class="border-right"><a href="entries.php">My Entries</a>
+      <li class="border-right"><a href="entries.php">Entries</a>
         <ul>
-          <li><a href="add_entry.php">Add a New Entry</a></li>
+          <li><a href="add_entry.php">Add New Entry</a></li>
           <li><a href="view_entry.php" id="active-item">View Entries</a></li>
         </ul>
       </li>
-      <li><a href="contact.php">Contact Us</a></li>
+      <li><a href="contact.php">Contact</a></li>
     </ul>
   </nav>
 
@@ -60,27 +70,31 @@ $row = mysqli_fetch_array($result);
   <div id="content">
 
     <h1> Are you sure you want to delete this entry? </h1>
-    <table>
-      <tr>
-        <th> Title </th>
-        <th> Date </th>
-        <th> Content </th>
-        <th> Action </th>
-      </tr>
+
     <?php
+
+      echo "<table id='delete_entry'>";
 
       echo "<tr>";
       echo "<td> ".$row['title']."</td>";
-      echo "<td>".$row['entry_date']."</td>";
-      echo "<td>".$row['content']."</td>";
-      echo "<td> <a class='entries-btn' href=\"delete_page.php?id=". $row['id'] ."\"> Delete </a>
-      <a class='entries-btn' href=\"entries.php\"> Cancel </a></td>";
       echo "</tr>";
 
-      ?>
-    </table>
-  </div>
+      echo "<tr>";
+      echo "<td>".$row['entry_date']."</td>";
+      echo "</tr>";
 
+      echo "<tr>";
+      echo "<td>".$row['content']."</td>";
+      echo "</tr>";
+
+      echo "</table>";
+
+      echo "<a class='entries-btn' href=\"delete_page.php?id=". $row['id'] ."\"> Delete </a>
+      <a class='entries-btn' href=\"entries.php\"> Cancel </a>";
+
+      ?>
+
+  </div>
 
   <footer>
     <section class="border-right">

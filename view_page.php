@@ -1,14 +1,26 @@
 <?php
 
+session_start();
+
+if(!$_SESSION['email']) {
+  header("location: login.php");
+}
+
+ ?>
+
+<?php
+
+  $id = $_GET['id'];
+
   $db = mysqli_connect('45.55.177.160', 'root', '') or die ('Could not connect to db');
 
   mysqli_select_db($db, 'entries') or die ("Could not find database.");
 
-  $sql = "SELECT * FROM new_entry ";
+  $sql = "SELECT * FROM new_entry WHERE id = $id";
   $result = mysqli_query($db, $sql);
 
 //totals number of rows
-  $total = mysqli_query($db, "SELECT * FROM new_entry");
+  $total = mysqli_query($db, "SELECT * FROM new_entry WHERE id = $id");
   $num_rows = mysqli_num_rows($total);
 
 
@@ -37,46 +49,50 @@
     <a href="logout.php"><button id="logout" class="header-btn" type="button">Log out</button></a>
   </header>
 
-    <nav>
-      <ul>
-        <li class="border-right"><a href="home.php">Home</a></li>
-        <li class="border-right"><a href="about.php">About</a>
-          <ul>
-            <li><a href="testimonials.php">Testimonials</a></li>
-          </ul>
-        </li>
-        <li class="border-right"><a href="entries.php">My Entries</a>
-          <ul>
-            <li><a href="add_entry.php">Add a New Entry</a></li>
-            <li><a href="view_entry.php" id="active-item">View Entries</a></li>
-          </ul>
-        </li>
-        <li><a href="contact.php">Contact Us</a></li>
-      </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li class="border-right"><a href="home.php">Home</a></li>
+      <li class="border-right"><a href="about.php">About</a>
+        <ul>
+          <li><a href="testimonials.php">Testimonials</a></li>
+        </ul>
+      </li>
+      <li class="border-right"><a href="entries.php">Entries</a>
+        <ul>
+          <li><a href="add_entry.php">Add New Entry</a></li>
+          <li><a href="view_entry.php" id="active-item">View Entries</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.php">Contact</a></li>
+    </ul>
+  </nav>
 
   <div id="content">
-    <h1> My Entries: <?php echo "$num_rows \n"; ?> </h1>
-    <table>
-      <tr>
-        <th> Title </th>
-        <th> Date </th>
-        <th> Content </th>
-      </tr>
 
-      <?php
+    <?php
 
-      while ($row = mysqli_fetch_array($result)) {
-        echo "<tr>";
-        echo "<td>".$row['title']."</td>";
-        echo "<td>".$row['entry_date']."</td>";
-        echo "<td>".$row['content']."</td>";
-        echo "</tr>";
-      }
+    while ($row = mysqli_fetch_array($result)) {
 
-      ?>
+      echo "<h1>" .$row['title']. "</h1>";
 
-    </table>
+      echo "<table class='view_page'>";
+
+      echo "<tr>";
+      echo "<td>".$row['title']."</td>";
+      echo "</tr>";
+
+      echo "<tr>";
+      echo "<td>".$row['entry_date']."</td>";
+      echo "</tr>";
+
+      echo "<tr>";
+      echo "<td>".$row['content']."</td>";
+      echo "</tr>";
+
+      echo "</table>";
+
+    }
+    ?>
 
   </div>
 

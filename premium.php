@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+
+if(!$_SESSION['email']) {
+  header("location: login.php");
+}
+
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,21 +38,25 @@
           <li><a href="testimonials.php">Testimonials</a></li>
         </ul>
       </li>
-      <li class="border-right"><a href="entries.php">My Entries</a>
+      <li class="border-right"><a href="entries.php">Entries</a>
         <ul>
-          <li><a href="add_entry.php">Add a New Entry</a></li>
+          <li><a href="add_entry.php">Add New Entry</a></li>
           <li><a href="view_entry.php">View Entries</a></li>
         </ul>
       </li>
-      <li><a href="contact.php">Contact Us</a></li>
+      <li><a href="contact.php">Contact</a></li>
     </ul>
   </nav>
 
   <!-- End of Heading -->
 
   <div id="content">
-    <h1>Go Premium</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ante lacus, lacinia quis tempor vitae, suscipit eu turpis. Nunc sit amet ultricies massa, commodo tempor dui. Vivamus non eros et leo commodo consectetur eu suscipit velit. Proin consectetur elit a auctor gravida. Ut nec velit dignissim, mattis enim quis, fringilla ligula. Aliquam libero nisl, sollicitudin ac lacus vitae, consectetur iaculis nulla. In hac habitasse platea dictumst. Aenean sollicitudin tempor ullamcorper. Nam quis arcu nisl. Curabitur quis lacus viverra, faucibus sapien id, egestas lorem. Sed porttitor nisl dictum, dictum turpis vel, elementum odio. Nullam sit amet neque ut nulla convallis convallis. Maecenas vestibulum eros ac velit convallis, a vestibulum ipsum consequat.</p>
+
+    <h1> Go Premium </h1>
+    <p>You will receive exclusive features that a standard account will not receive, however, you will have to pay a small monthly fee. Are you sure you would like to change your account type to premium? </p>
+    <a href="premium.php"><button type="button" class="main-btn"> Go Premium </button></a>
+    <a href="settings.php"><button type="button" class="main-btn"> Cancel </button></a>
+
 
   </div>
 

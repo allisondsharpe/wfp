@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+
+if(!$_SESSION['email']) {
+  header("location: login.php");
+}
+
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,13 +38,13 @@
           <li><a href="testimonials.php" id="active-item">Testimonials</a></li>
         </ul>
       </li>
-      <li class="border-right"><a href="entries.php">My Entries</a>
+      <li class="border-right"><a href="entries.php">Entries</a>
         <ul>
-          <li><a href="add_entry.php">Add a New Entry</a></li>
+          <li><a href="add_entry.php">Add New Entry</a></li>
           <li><a href="view_entry.php">View Entries</a></li>
         </ul>
       </li>
-      <li><a href="contact.php">Contact Us</a></li>
+      <li><a href="contact.php">Contact</a></li>
     </ul>
   </nav>
 
@@ -44,13 +54,13 @@
     <div class="testimonials_sections">
       <h1>Lisa Smith</h1>
       <img src="assets/personas/persona1.jpg" class="personas" id="persona1"/>
-      <p>"." -Lisa Smith</p>
+      <p>"I first discovered The Anonymous Aspirer by creating my very first blog about two years ago and I've been receiving benefits from it since then. Before creating my very first blog, I was rejected from multiple publishers until I created my own independent blog with The Anonymous Aspirer. Now I'm an independent blogger and very much satisfied with how far I've come." <br> -Lisa Smith </p>
     </div>
 
     <div class="testimonials_sections" align="right">
       <h1>Larry Parker</h1>
       <img src="assets/personas/persona2.jpg" class="personas" id="persona2"/>
-      <p>"." -Larry Parker</p>
+      <p>"The Anonymous Aspirer has provided me with a solid foundation for my offline business. I am the co-founder of a five star restuarant here in Orlando, Florida. Orlando is a large city filled with eager people willing to try new things, but before creating our blog to promote our offline business, we noticed that we weren't getting noticed as much. We were only well known by the locals here in Orlando, but now we have people from anywhere and everywhere traveling down here to Orlando just to dine at our restuarant and it's all from the foundation we built with The Anonymous Aspirer." <br> -Larry Parker</p>
     </div>
   </div>
 

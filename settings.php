@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+
+if(!$_SESSION['email']) {
+  header("location: login.php");
+}
+
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,13 +38,13 @@
           <li><a href="testimonials.php">Testimonials</a></li>
         </ul>
       </li>
-      <li class="border-right"><a href="entries.php">My Entries</a>
+      <li class="border-right"><a href="entries.php">Entries</a>
         <ul>
-          <li><a href="add_entry.php">Add a New Entry</a></li>
+          <li><a href="add_entry.php">Add New Entry</a></li>
           <li><a href="view_entry.php">View Entries</a></li>
         </ul>
       </li>
-      <li><a href="contact.php">Contact Us</a></li>
+      <li><a href="contact.php">Contact</a></li>
     </ul>
   </nav>
 
@@ -45,7 +55,7 @@
 
     <div class="settings">
       <h3> Go Premium </h3>
-      <p>Change your account from standard to premium by clicking the option below.</p>
+      <p>Choose to go premium and receive all the benefits excluded from a standard account. You may return at any time to change these settings.</p>
       <a href="premium.php"><button type="button" class="main-btn"> Go Premium </button></a>
     </div>
 

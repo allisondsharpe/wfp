@@ -1,10 +1,20 @@
 <?php
 
+session_start();
+
+if(!$_SESSION['email']) {
+  header("location: login.php");
+}
+
+ ?>
+
+<?php
+
   $db = mysqli_connect('45.55.177.160', 'root', '') or die ('Could not connect to db');
 
   mysqli_select_db($db, 'entries') or die ("Could not find database.");
 
-  $sql = "SELECT * FROM new_entry ";
+  $sql = "SELECT * FROM new_entry";
   $result = mysqli_query($db, $sql);
 
 //totals number of rows
@@ -45,13 +55,13 @@
           <li><a href="testimonials.php">Testimonials</a></li>
         </ul>
       </li>
-      <li class="border-right"><a href="entries.php">My Entries</a>
+      <li class="border-right"><a href="entries.php">Entries</a>
         <ul>
-          <li><a href="add_entry.php">Add a New Entry</a></li>
+          <li><a href="add_entry.php">Add New Entry</a></li>
           <li><a href="view_entry.php" id="active-item">View Entries</a></li>
         </ul>
       </li>
-      <li><a href="contact.php">Contact Us</a></li>
+      <li><a href="contact.php">Contact</a></li>
     </ul>
   </nav>
 

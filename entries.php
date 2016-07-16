@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+
+if(!$_SESSION['email']) {
+  header("location: login.php");
+}
+
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,13 +39,13 @@
         <li><a href="testimonials.php">Testimonials</a></li>
       </ul>
     </li>
-    <li class="border-right"><a href="entries.php" id="active-item">My Entries</a>
+    <li class="border-right"><a href="entries.php" id="active-item">Entries</a>
       <ul>
-        <li><a href="add_entry.php">Add a New Entry</a></li>
+        <li><a href="add_entry.php">Add New Entry</a></li>
         <li><a href="view_entry.php">View Entries</a></li>
       </ul>
     </li>
-    <li><a href="contact.php">Contact Us</a></li>
+    <li><a href="contact.php">Contact</a></li>
   </ul>
 </nav>
 

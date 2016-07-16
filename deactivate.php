@@ -1,3 +1,29 @@
+<?php
+
+session_start();
+
+if(!$_SESSION['email']) {
+  header("location: login.php");
+}
+
+ ?>
+
+ <?php
+
+ $db = mysqli_connect("45.55.177.160", "root", "") or die("Could not connect to database");
+
+ mysqli_select_db($db, "register") or die ("Could not find database.");
+
+ $sql = "SELECT * FROM users";
+
+ $result = mysqli_query($db, $sql);
+
+ $row = mysqli_fetch_array($result);
+
+
+ ?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,13 +54,13 @@
           <li><a href="testimonials.php">Testimonials</a></li>
         </ul>
       </li>
-      <li class="border-right"><a href="entries.php">My Entries</a>
+      <li class="border-right"><a href="entries.php">Entries</a>
         <ul>
-          <li><a href="add_entry.php">Add a New Entry</a></li>
+          <li><a href="add_entry.php">Add New Entry</a></li>
           <li><a href="view_entry.php">View Entries</a></li>
         </ul>
       </li>
-      <li><a href="contact.php" id="active-item">Contact Us</a></li>
+      <li><a href="contact.php">Contact</a></li>
     </ul>
   </nav>
 
@@ -44,8 +70,11 @@
     <h1>Are you sure you want to deactive your acccount?</h1>
     <p>Once you delete your account, you may not reactivate it at a later time.</p>
 
-    <a href="deactivate_success.php"><button type="submit" class="main-btn"> Delete Account </button></a>
-    <a href="home.php"><button type="submit" class="main-btn"> Cancel </button></a>
+    <?php
+
+    echo "<a class='main-btn' href=\"deactivate_success.php?id=". $row['id'] ."\"> Delete Account</a>"
+    ?>
+    <a href="settings.php"><button type="submit" class="main-btn"> Cancel </button></a>
   </div>
 
   <footer>
@@ -73,3 +102,10 @@
 
 </body>
 </html>
+
+
+<?php
+
+mysqli_close($db);
+
+?>

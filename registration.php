@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +41,7 @@
         <input type="password" name="password" class="form_input" required><br>
         Confirm Password: <br>
         <input type="password" name="confirmpw" class="form_input" required><br>
-        <input type="checkbox" name="terms" value="terms">I agree to the Terms of Service<br>
+        <input type="checkbox" name="terms" value="terms" required>I agree to the Terms of Service<br>
         <input type="submit" name="submit" class="main-btn" value="Submit">
       </form>
     </div>
@@ -80,6 +86,7 @@
    }
 
     if(isset($_POST['submit'])) {
+      $id = $_POST['id'];
       $firstname = $_POST['firstname'];
       $lastname = $_POST['lastname'];
       $email = $_POST['email'];
@@ -91,7 +98,7 @@
         exit();
       }
 
-       $insertquery = "INSERT INTO users (firstname, lastname, email, password) VALUES ('$firstname','$lastname','$email', '$password')";
+       $insertquery = "INSERT INTO users (id, firstname, lastname, email, password) VALUES ('$id','$firstname','$lastname','$email', '$password')";
        if (mysqli_query($db, $insertquery)) {
          echo "<script>window.open('home.php','_self')</script>";
        } else {
