@@ -42,6 +42,7 @@ header button {
 @media screen and (max-width: 480px) {
       #logo {
         width: 60%;
+        margin-bottom: 20px;
       }
     }
 
