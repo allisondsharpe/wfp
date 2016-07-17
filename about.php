@@ -87,6 +87,5 @@ if(!$_SESSION['email']) {
     <p id="copyright"> Copyright &copy; The Anonymous Aspirer, 2015. </p>
   </footer>
 
-
 </body>
 </html>
