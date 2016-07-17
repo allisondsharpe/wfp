@@ -62,11 +62,15 @@ ul {
  /* Responsive Mobile */
 
  @media screen and (max-width: 480px) {
-       nav {
-         padding: 0;
-         margin: 0;
-       }
-     }
+      ul li a {
+        width: 20%;
+        padding: 0;
+      }
+
+      li ul a {
+        padding: 0;
+      }
+    }
 
  /* Responsive Tablet */
 
