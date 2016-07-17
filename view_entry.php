@@ -27,7 +27,8 @@ if(!$_SESSION['email']) {
 <!DOCTYPE html>
 <html>
 <head>
-  <title> View Entries </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> View Entries </title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/nav.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">

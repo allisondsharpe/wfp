@@ -26,7 +26,8 @@ $row = mysqli_fetch_array($result);
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Update Entry </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Update Entry </title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/nav.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
