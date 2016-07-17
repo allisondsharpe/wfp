@@ -63,8 +63,9 @@ ul {
 
  @media screen and (max-width: 480px) {
       ul li a {
-        width: 80%;
+        width: 100%;
         padding: 0;
+        display: block;
       }
 
       li ul a {
