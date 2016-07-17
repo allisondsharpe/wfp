@@ -63,7 +63,8 @@ ul {
 
  @media screen and (max-width: 480px) {
        nav {
-         padding-right: 0;
+         padding: 0;
+         margin: 0;
        }
      }
 
