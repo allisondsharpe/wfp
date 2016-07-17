@@ -218,9 +218,25 @@ td {
 
 }
 
-/* Responsive Media Queries */
+/* Responsive Mobile */
 
-@media screen and (max-width:480px) {
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+      body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+/* Responsive Tablet */
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
       body {
         width: 100%;
         margin: 0;
