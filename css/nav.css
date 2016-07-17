@@ -58,3 +58,21 @@ ul {
  #active-item:hover {
    color: #fff;
  }
+
+ /* Responsive Mobile */
+
+ @media screen and (max-width: 480px) {
+       nav {
+         align: center; 
+       }
+     }
+
+ /* Responsive Tablet */
+
+ @media screen and (max-width: 1024px) {
+       body {
+         width: 100%;
+         margin: 0;
+         padding: 0;
+       }
+     }
