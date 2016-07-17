@@ -35,3 +35,24 @@ header button {
   padding: 1%;
   font-size: 0.9em;
 }
+
+
+/* Responsive Mobile */
+
+@media screen and (max-width: 480px) {
+      #logo {
+        width: 50%;
+        margin-left: 3%;
+        margin-top: 80px;
+      }
+    }
+
+/* Responsive Tablet */
+
+@media screen and (max-width: 1024px) {
+      body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    }
