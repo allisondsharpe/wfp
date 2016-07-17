@@ -62,11 +62,15 @@ ul {
  /* Responsive Mobile */
 
  @media screen and (max-width: 480px) {
+      li {
+        float: left;
+        clear: left;
+      }
+
       ul li a {
         width: 100%;
         padding: 0;
-        float: left;
-        clear: left;
+
       }
 
       li ul a {
