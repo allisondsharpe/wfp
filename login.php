@@ -5,7 +5,6 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> Log in </title>
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/header.css">
@@ -40,13 +39,13 @@ session_start();
   </div>
 
   <footer>
-    <section class="border-right">
+    <section class="footer-border">
       <h4>Stay Tuned</h4>
       <p>Connect with us on Twitter to see the latest news and updates.</p>
       <a href="https://twitter.com/AnonAspirer?lang=en"><img src="assets/icons/twitter_icon.png" /></a>
     </section>
 
-    <section class="border-right">
+    <section class="footer-border">
       <h4>Email Updates</h4>
       <p>Enter in your email to receive our offers and announcements.</p>
       <input type="text" />
@@ -67,7 +66,7 @@ session_start();
 
 <?php
 
-$db = mysqli_connect("45.55.177.160", "root", "");
+$db = mysqli_connect("localhost", "root", "");
 mysqli_select_db($db, "register");
 
 if(isset($_POST['login'])) {
