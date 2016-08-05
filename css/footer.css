@@ -66,10 +66,9 @@ section:nth-child(2) img {
 
 /* Responsive Mobile */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 481px) {
     section{
       padding-right: 30%;
-      padding-left: 5%;
       padding-top: 5%;
     }
 
@@ -104,6 +103,6 @@ section:nth-child(2) img {
 
 /* Responsive Tablet */
 
-@media screen and (min-width: 481px) and (max-width: 1024px) {
+@media screen and (min-width: 482px) and (max-width: 1024px) {
 
   }
