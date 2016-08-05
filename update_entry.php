@@ -12,7 +12,7 @@ if(!$_SESSION['email']) {
 
 $id = $_GET['id'];
 
-$db = mysqli_connect("localhost", "root", "") or die ("Could not connect to database.");
+$db = mysqli_connect("45.55.177.160", "root", "") or die ("Could not connect to database.");
 
 mysqli_select_db($db, "entries") or die ("Could not find database.");
 
