@@ -8,21 +8,19 @@ if(!$_SESSION['email']) {
 
  ?>
 
-+<?php
-+
-+  $db = mysqli_connect('45.55.177.160', 'root', '') or die ('Could not connect to db');
-+
-+  mysqli_select_db($db, 'entries') or die ("Could not find database.");
-+
-+  $sql = "SELECT * FROM new_entry ";
-+  $result = mysqli_query($db, $sql);
-+
-+//totals number of rows
-+  $total = mysqli_query($db, "SELECT * FROM new_entry");
-+  $num_rows = mysqli_num_rows($total);
-+
-+
-+?>
+<?php
+
+$db = mysqli_connect('45.55.177.160', 'root', '') or die ('Could not connect to db');
+
+mysqli_select_db($db, 'entries') or die ("Could not find database.");
+$sql = "SELECT * FROM new_entry ";
+$result = mysqli_query($db, $sql);
+
+//totals number of rows
+$total = mysqli_query($db, "SELECT * FROM new_entry");
+$num_rows = mysqli_num_rows($total);
+
+?>
 
 <!DOCTYPE html>
 <html>
