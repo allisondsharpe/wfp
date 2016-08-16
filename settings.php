@@ -27,6 +27,7 @@ if(!$_SESSION['email']) {
   <header>
     <img src="assets/images/logo.png" alt="AA logo" id="logo"/>
     <a href="settings.php"><button id="settings" class="header-btn" type="button">Settings</button></a>
+    <a href="logout.php"><button id="logout" class="header-btn" type="button">Log out</button></a>
   </header>
 
   <nav>
@@ -53,12 +54,6 @@ if(!$_SESSION['email']) {
     <h1>Account Settings</h1>
 
     <div class="settings">
-      <h3> Logout </h3>
-      <p> Click the option below to log out of your account. You will have the option to log back in. </p>
-      <a href="logout.php"><button id="logout" class="main-btn" type="button">Log out</button></a>
-    </div>
-
-    <div class="settings">
       <h3> Go Premium </h3>
       <p>Choose to go premium and receive all the benefits excluded from a standard account. You may return at any time to change these settings.</p>
       <a href="premium.php"><button type="button" class="main-btn"> Go Premium </button></a>
@@ -69,7 +64,6 @@ if(!$_SESSION['email']) {
       <p>By clicking the option down below, you will delete your account and erase and all of its settings. This could take up to 48 hours.</p>
       <a href="deactivate.php"><button type="button" class="main-btn"> Deactivate </button></a>
     </div>
-
   </div>
 
   <footer>

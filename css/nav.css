@@ -61,15 +61,14 @@ ul {
 
  /* Responsive Mobile */
 
- @media screen and (max-width: 481px) {
+ @media screen and (max-width: 480px) {
       nav {
         margin-top: 70px;
         margin-bottom: 200px;
-        margin-left: 0;
       }
 
       ul li a {
-        padding-right: 28%;
+        padding-right: 23%;
         padding-left: 23%;
         padding-top: 40px;
         padding-bottom: 40px;
@@ -86,7 +85,7 @@ ul {
 
  /* Responsive Tablet */
 
- @media screen and (min-width: 482px) and (max-width: 1024px) {
+ @media screen and (min-width: 481px) and (max-width: 1024px) {
    nav {
      margin-top: 100px;
      margin-bottom: 230px;

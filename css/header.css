@@ -10,7 +10,7 @@ header {
 }
 
 #settings {
-  margin-left: 27.4%;
+  margin-left: 18%;
 }
 
 header button {
@@ -39,13 +39,17 @@ header button {
 
 /* Responsive Mobile */
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 480px) {
       #logo {
         width: 80%
       }
 
       #settings {
         margin-left: 0;
+        margin-right: 500%;
+      }
+
+      .header-btn {
         margin-top: 98px;
       }
 
@@ -56,8 +60,8 @@ header button {
 
 /* Responsive Tablet */
 
-@media screen and (min-width: 482px) and (max-width: 1024px) {
-      #settings {
-        margin-left: 31.5%;
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+      .header-btn {
+        margin-left: 27%;
       }
     }
