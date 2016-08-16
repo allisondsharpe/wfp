@@ -24,11 +24,11 @@ if(!$_SESSION['email']) {
 
 ?>
 
-
 <!DOCTYPE html>
 <html>
 <head>
-  <title> View Entries </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> View Entries </title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/nav.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
@@ -97,13 +97,13 @@ if(!$_SESSION['email']) {
   </div>
 
   <footer>
-    <section class="footer-border">
+    <section class="border-right">
       <h4>Stay Tuned</h4>
       <p>Connect with us on Twitter to see the latest news and updates.</p>
       <a href="https://twitter.com/AnonAspirer?lang=en"><img src="assets/icons/twitter_icon.png" /></a>
     </section>
 
-    <section class="footer-border">
+    <section class="border-right">
       <h4>Email Updates</h4>
       <p>Enter in your email to receive our offers and announcements.</p>
       <input type="text" />

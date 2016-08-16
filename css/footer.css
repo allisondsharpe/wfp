@@ -38,7 +38,7 @@ section:nth-child(2) img {
   position: absolute;
 }
 
-.footer-border {
+.border-right {
   border-right: 2px solid #fff;
 }
 
@@ -63,47 +63,3 @@ section:nth-child(2) img {
   border-top: 2px solid #ffffff;
   padding: 1%;
 }
-
-/* Responsive Mobile */
-
-@media screen and (max-width: 480px) {
-    section{
-      padding-right: 30%;
-      padding-left: 5%;
-      padding-top: 5%;
-    }
-
-    .footer-border {
-      border-bottom: 2px solid #fff;
-      border-right: none;
-      padding-right: 65%;
-    }
-
-    section p {
-      width: 310%;
-    }
-
-    section:nth-child(1) img{
-      width: 50%;
-    }
-
-    section:nth-child(2) input {
-      width: 60%;
-      padding-top: 1.5%;
-      padding-bottom: 1.5%;
-      padding-right: 1.5%;
-      padding-left: 5%;
-    }
-
-    section:nth-child(2) img {
-      width: 6%;
-      margin-top: 5px;
-    }
-
-   }
-
-/* Responsive Tablet */
-
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-
-  }

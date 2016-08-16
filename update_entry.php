@@ -23,11 +23,11 @@ $row = mysqli_fetch_array($result);
 
 ?>
 
-
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Update Entry </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Update Entry </title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/nav.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
@@ -70,29 +70,30 @@ $row = mysqli_fetch_array($result);
   <div id="content">
     <h1> Update Entry: <?php echo $row['title']; ?> </h1>
     <form method="POST" id="entry_form" action="update_page.php">
+      id <input type="text" name="id" value="<?php echo $row['id']; ?>" readonly="readonly" /><br/>
       <div id="form_heading1">
-        Title <input type="text" name="title" class="form_input" value="<?php echo $row['title']; ?>" />
+        Title <input type="text" name="title" class="form_input" value="<?php echo $row['title']; ?>" /><br/>
       </div>
 
       <div id="form_heading2">
-        Date <input type="text" name="entry_date" id="datepicker" value="<?php echo $row['entry_date']; ?>" />
+        Date <input type="text" name="entry_date" id="datepicker" value="<?php echo $row['entry_date']; ?>" /><br/>
       </div>
 
       <img src="assets/icons/calendar_icon.png"/>
 
-      <textarea type="text" id="entry_textarea" name="content"> <?php echo $row['content']; ?> </textarea>
+      <textarea type="text" id="entry_textarea" name="content"> <?php echo $row['content']; ?> </textarea><br/>
       <input type="submit" class="main-btn" name="submit" value="Update">
     </form>
   </div>
 
   <footer>
-    <section class="footer-border">
+    <section class="border-right">
       <h4>Stay Tuned</h4>
       <p>Connect with us on Twitter to see the latest news and updates.</p>
       <a href="https://twitter.com/AnonAspirer?lang=en"><img src="assets/icons/twitter_icon.png" /></a>
     </section>
 
-    <section class="footer-border">
+    <section class="border-right">
       <h4>Email Updates</h4>
       <p>Enter in your email to receive our offers and announcements.</p>
       <input type="text" />

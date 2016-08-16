@@ -10,6 +10,7 @@ if(!$_SESSION['email']) {
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> Dashboard </title>
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/nav.css">
@@ -58,27 +59,27 @@ if(!$_SESSION['email']) {
     </div>
 
     <footer>
-      <section class="footer-border">
-        <h4>Stay Tuned</h4>
-        <p>Connect with us on Twitter to see the latest news and updates.</p>
-        <a href="https://twitter.com/AnonAspirer?lang=en"><img src="assets/icons/twitter_icon.png" /></a>
-      </section>
+    <section class="border-right">
+      <h4>Stay Tuned</h4>
+      <p>Connect with us on Twitter to see the latest news and updates.</p>
+      <a href="https://twitter.com/AnonAspirer?lang=en"><img src="assets/icons/twitter_icon.png" /></a>
+    </section>
 
-      <section class="footer-border">
-        <h4>Email Updates</h4>
-        <p>Enter in your email to receive our offers and announcements.</p>
-        <input type="text" />
-        <img src="assets/icons/email_icon.png">
-      </section>
+    <section class="border-right">
+      <h4>Email Updates</h4>
+      <p>Enter in your email to receive our offers and announcements.</p>
+      <input type="text" />
+      <img src="assets/icons/email_icon.png">
+    </section>
 
-      <section>
-        <h4>Contact Us</h4>
-        <p>Have any questions? Send us an email and we'll get back to you as soon as possible. </p>
-        <a href="mailto:myblog@anonaspirer.com"><button id="footer-btn" type="button">Email Us</button></a>
-      </section>
+    <section>
+      <h4>Contact Us</h4>
+      <p>Have any questions? Send us an email and we'll get back to you as soon as possible. </p>
+      <a href="mailto:myblog@anonaspirer.com"><button id="footer-btn" type="button">Email Us</button></a>
+    </section>
 
-      <p id="copyright"> Copyright &copy; The Anonymous Aspirer, 2015. </p>
-    </footer>
+    <p id="copyright"> Copyright &copy; The Anonymous Aspirer, 2015. </p>
+  </footer>
 
 </body>
 </html>

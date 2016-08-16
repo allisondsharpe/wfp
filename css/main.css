@@ -226,81 +226,14 @@ td {
         margin: 0;
         padding: 0;
       }
-
-      #main_content{
-        margin-top: 70px;
-      }
-
-      .form_input {
-        width: 55%;
-        padding: 1.8%;
-      }
-
-      .personas {
-        width: 50%;
-      }
-
-      #contact_form {
-        clear: left;
-        margin-left: 0;
-      }
-
-      #form_heading1 input {
-        width: 297%;
-      }
-
-      #form_heading2 input {
-        width: 275%;
-      }
-
-      #form_heading2, #form_heading input {
-        margin-left: 0;
-        clear: left;
-      }
-
-      #entry_form img {
-        width: 10%;
-        margin-top: 62px;
-        margin-left: 54%;
-      }
     }
 
 /* Responsive Tablet */
 
-@media screen and (min-width: 481px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
       body {
         width: 100%;
         margin: 0;
         padding: 0;
-      }
-
-      #form_heading1 input {
-        width: 350%;
-      }
-
-      #form_heading2 input {
-        width: 263%;
-      }
-
-      #form_heading2, #form_heading input {
-        margin-left: 40%;
-      }
-
-      #entry_form img {
-        width: 3%;
-        margin-left: 24%;
-      }
-
-      #contact_form {
-        clear: left;
-        margin-left: 0;
-      }
-
-      #contact_form input {
-        width: 50%;
-      }
-
-      #contact_form textarea {
-        width: 60%;
       }
     }
