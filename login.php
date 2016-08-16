@@ -66,7 +66,7 @@ session_start();
 
 <?php
 
-$db = mysqli_connect("localhost", "root", "");
+$db = mysqli_connect("45.55.177.160", "root", "");
 mysqli_select_db($db, "register");
 
 if(isset($_POST['login'])) {

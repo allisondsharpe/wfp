@@ -74,7 +74,7 @@ session_start();
 </html>
 
 <?php
-   $servername = "localhost";
+   $servername = "45.55.177.160";
    $username = "root";
    $password = "";
    $dbname = "register";
