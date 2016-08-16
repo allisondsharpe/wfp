@@ -9,7 +9,7 @@ if(!$_SESSION['email']) {
 $id = $_GET['id'];
 $db = mysqli_connect("45.55.177.160", "root", "") or die ("Could not connect to database.");
 mysqli_select_db($db, "entries") or die ("Could not find database.");
-$sql = "SELECT * FROM new_entry WHERE id = $id ";
+$sql = "SELECT * FROM new_entry WHERE id = $id";
 $result = mysqli_query($db, $sql);
 $row = mysqli_fetch_array($result);
 ?>
