@@ -6,12 +6,12 @@ if(!$_SESSION['email']) {
  ?>
 
 <?php
-  $id = $_GET['id'];
-  $db = mysqli_connect("45.55.177.160", "root", "") or die ("Could not connect to database.");
-  mysqli_select_db($db, "entries") or die ("Could not find database.");
-  $sql = "SELECT * FROM new_entry WHERE id = $id ";
-  $result = mysqli_query($db, $sql);
-  $row = mysqli_fetch_array($result);
+$id = $_GET['id'];
+$db = mysqli_connect("45.55.177.160", "root", "") or die ("Could not connect to database.");
+mysqli_select_db($db, "entries") or die ("Could not find database.");
+$sql = "SELECT * FROM new_entry WHERE id = $id ";
+$result = mysqli_query($db, $sql);
+$row = mysqli_fetch_array($result);
 ?>
 
 <!DOCTYPE html>
@@ -34,6 +34,7 @@ if(!$_SESSION['email']) {
   <header>
     <img src="assets/images/logo.png" alt="AA logo" id="logo"/>
     <a href="settings.php"><button id="settings" class="header-btn" type="button">Settings</button></a>
+    <a href="logout.php"><button id="logout" class="header-btn" type="button">Log out</button></a>
   </header>
 
   <nav>
