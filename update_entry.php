@@ -44,7 +44,6 @@ $row = mysqli_fetch_array($result);
   <header>
     <img src="assets/images/logo.png" alt="AA logo" id="logo"/>
     <a href="settings.php"><button id="settings" class="header-btn" type="button">Settings</button></a>
-    <a href="logout.php"><button id="logout" class="header-btn" type="button">Log out</button></a>
   </header>
 
   <nav>
@@ -70,7 +69,6 @@ $row = mysqli_fetch_array($result);
   <div id="content">
     <h1> Update Entry: <?php echo $row['title']; ?> </h1>
     <form method="POST" id="entry_form" action="update_page.php">
-      id <input type="text" name="id" value="<?php echo $row['id']; ?>" readonly="readonly" /><br/>
       <div id="form_heading1">
         Title <input type="text" name="title" class="form_input" value="<?php echo $row['title']; ?>" /><br/>
       </div>

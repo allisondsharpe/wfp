@@ -28,7 +28,6 @@ if(!$_SESSION['email']) {
   <header>
     <img src="assets/images/logo.png" alt="AA logo" id="logo"/>
     <a href="settings.php"><button id="settings" class="header-btn" type="button">Settings</button></a>
-    <a href="logout.php"><button id="logout" class="header-btn" type="button">Log out</button></a>
   </header>
 
   <nav>
@@ -53,6 +52,12 @@ if(!$_SESSION['email']) {
 
   <div id="content">
     <h1>Account Settings</h1>
+
+    <div class="settings">
+      <h3> Logout </h3>
+      <p> Click the option below to log out of your account. You will have the option to log back in. </p>
+      <a href="logout.php"><button id="logout" class="main-btn" type="button">Log out</button></a>
+    </div>
 
     <div class="settings">
       <h3> Go Premium </h3>
