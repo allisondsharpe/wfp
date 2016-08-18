@@ -34,7 +34,6 @@ session_start();
           <input type="text" name="email" class="form_input" required><br>
           Password: <br>
           <input type="password" name="password"  class="form_input" required><br>
-          <a href="">Forgot Password?</a>
           <input type="submit" name="login" class="main-btn" value="Submit">
         </form>
       </div>
